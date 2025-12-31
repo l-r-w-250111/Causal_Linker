@@ -1,0 +1,11 @@
+### Structural Forward Matrix ###
+       From X0  From X1  From X2
+To X0    0.353    0.335    0.312
+To X1    0.428    0.290    0.283
+To X2    0.257    0.510    0.233
+
+### Structural Reverse Matrix ###
+       From X0  From X1  From X2
+To X0    0.222    0.530    0.243
+To X1    0.278    0.284    0.439
+To X2    0.318    0.340    0.342
