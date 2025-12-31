@@ -40,3 +40,11 @@ $$\mathcal{M}(A_{ij}) =
 
 $$\mathcal{M}(A) = \log(A + \epsilon)$$ 
 
+#### Future Work
+1. 介入ノードの自動探索（Active Causal Learning） 
+    反実仮想を、最も論理が崩れやすい箇所に自ら仕掛け、最も効率的に因果を解明できるようにする。学習された因果マスクの不確実性に基づいて介入対象を能動的に選択する。  
+1. 動的な因果グラフ生成（Amortized Causal Discovery）
+    $A$ を入力ごとに生成し、文脈に応じて、因果の「配管（Mask）」を動的に切り替える。  
+1. 潜在空間での因果計算（Causal Representation Learning）
+   「原因因子」と「結果因子」を分離（Disentanglement）し、その潜在ベクトル間で Causal Attention Layer を動かす。言語の表層的な並びではなく、潜在的な概念レベルでの「因果のドミノ倒し」を計算する。
+
