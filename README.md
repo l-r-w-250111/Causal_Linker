@@ -14,3 +14,23 @@ DAG制約付き Attention に do 介入を混入させ、Transformer の情報�
     * Transformer の拡張で情報流の制御機構を実装する
 
 
+#### 主要な式
+* 
+
+$$A^{do(j)}_{ik} = 
+\begin{cases} 
+0 & (\text{if } k = j \text{ and } i \neq j: \text{ノード } j \text{ から外への影響は維持}) \\
+0 & (\text{if } i = j: \text{外部からノード } j \text{ への流入をすべて遮断}) \\
+A_{ik} & (\text{otherwise})
+\end{cases}$$
+
+
+* 
+
+$$\mathcal{L} = \underbrace{(1 - p_{do})\mathcal{L}_{obs} + p_{do}\mathcal{L}_{int}}_{\text{予測一貫性}} + \underbrace{\alpha h(A) + \frac{\rho}{2}|h(A)|^2}_{\text{DAG制約}} + \lambda\|A\|_1$$
+
+* 
+
+$$h(A) = \text{tr}(e^{A \circ A}) - d$$ 
+
+
