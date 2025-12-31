@@ -58,3 +58,9 @@ $$\mathcal{L} = \mathcal{L}_{task} + \mathbb{E}_{X \sim P(X)} [ \alpha h(A_X) + 
 3. 潜在空間での因果計算（Causal Representation Learning）
    「原因因子」と「結果因子」を分離（Disentanglement）し、その潜在ベクトル間で Causal Attention Layer を動かす。言語の表層的な並びではなく、潜在的な概念レベルでの「因果のドミノ倒し」を計算する。
 
+
+#### 検証結果
+##### Test-01～-05
+* Attention は文脈依存・非対称・介入感受的 な構造表現になり得る
+* Softmax はその性質を破壊する
+* 構造的 Attention（非確率）は因果的帰納バイアスを自然に実装できる
