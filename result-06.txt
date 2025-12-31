@@ -1,0 +1,9 @@
+### Learned Structural Matrix (Forward) ###
+       From X0  From X1  From X2
+To X0    0.012    0.099    0.058
+To X1    0.192    0.026    0.106
+To X2    0.137    0.748    0.028
+
+### Counterfactual Test: 'What if X0 was increased by +5.0?' ###
+Intervention on X0: [5. 0. 0.]
+Predicted Effect on [X0, X1, X2]: [0.058 0.958 0.686]
