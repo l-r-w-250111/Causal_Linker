@@ -1,0 +1,11 @@
+### Forward Matrix ###
+       From X0  From X1  From X2
+To X0    0.250    0.360    0.389
+To X1    0.412    0.268    0.320
+To X2    0.157    0.570    0.273
+
+### Reverse Matrix ###
+       From X0  From X1  From X2
+To X0    0.318    0.530    0.152
+To X1    0.379    0.239    0.382
+To X2    0.407    0.308    0.286
