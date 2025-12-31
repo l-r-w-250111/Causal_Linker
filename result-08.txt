@@ -1,0 +1,11 @@
+### Learned Structural Matrix (Forward Average) ###
+       From X0  From X1  From X2
+To X0    0.000    0.014    0.001
+To X1    0.947    0.000    0.010
+To X2    0.001    0.961    0.000
+
+[Recursive Do-Test] X0 initial pulse: 5.0
+Step 1 [X0, X1, X2]: [0.054 0.418 0.176]
+Step 2 [X0, X1, X2]: [0.041 0.032 0.218]
+Step 3 [X0, X1, X2]: [0.007 0.027 0.017]
+Step 4 [X0, X1, X2]: [0.006 0.003 0.004]
