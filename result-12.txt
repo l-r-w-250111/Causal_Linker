@@ -1,0 +1,13 @@
+=== Integral Phase Rollout (Stability Check) ===
+Step  0: X1= 7.44, X2= 0.00 | Phase(X2->X1)=  0.44π
+Step  1: X1=-6.43, X2=-0.01 | Phase(X2->X1)=  0.86π
+Step  2: X1=-13.01, X2= 0.02 | Phase(X2->X1)=  1.03π
+Step  3: X1= 2.29, X2=-0.02 | Phase(X2->X1)=  1.32π
+Step  4: X1= 5.74, X2= 0.01 | Phase(X2->X1)=  1.58π
+Step  5: X1= 2.06, X2= 0.03 | Phase(X2->X1)=  1.94π
+Step  6: X1= 3.03, X2= 0.00 | Phase(X2->X1)=  2.22π
+Step  7: X1=-0.12, X2= 0.01 | Phase(X2->X1)=  2.37π
+Step  8: X1=-2.06, X2= 0.02 | Phase(X2->X1)=  2.76π
+Step  9: X1= 0.11, X2=-0.01 | Phase(X2->X1)=  3.16π
+Step 10: X1=-0.99, X2= 0.00 | Phase(X2->X1)=  3.58π
+Step 11: X1=-0.13, X2=-0.00 | Phase(X2->X1)=  4.00π
