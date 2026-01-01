@@ -1,0 +1,12 @@
+### 1. Learned Structural Matrix (A) ###
+       From X0  From X1  From X2
+To X0    0.004    0.184    0.009
+To X1    0.141    0.007    0.140
+To X2    0.009    0.198    0.021
+
+### 2. Recursive Do-Test (Strict Propagation) ###
+Step 0 (Do X0=5.0): X0=5.0, X1=0.0, X2=0.0
+Step 1: X0=0.022, X1=0.706, X2=0.046
+Step 2: X0=0.130, X1=0.014, X2=0.141
+Step 3: X0=0.004, X1=0.038, X2=0.007
+Step 4: X0=0.007, X1=0.002, X2=0.008
