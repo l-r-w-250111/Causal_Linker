@@ -151,6 +151,11 @@ System B：Heater → Energy(内部エネルギー) → Motion(分子運動) →
 * (Bは中間にエネルギー蓄積を持つため、局所破壊でも位相同期が完全崩壊しない。)
 * Future Work: 説明つかない場合はモードを生成して説明がつく解を得る(=観測しているスケールの変更に対応)
 
+##### Test-25
+* 説明つかない場合はモードを生成して説明がつく解を得る=選好付き生成問題
+* 評価関数
+$${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1}+{\lambda}_{3}⋅Complexity^{(k)}+{\lambda}_{4}⋅Instability^{(k)}$$
+
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
 ノード集合を $V$、ノード $i \in V$ の位相を $\phi_i(t)$ とする。
