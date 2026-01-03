@@ -1,6 +1,8 @@
 # Causal Linker
 Learning Structural-Equation-Like Information Flow in Transformers via DAG-Constrained Interventional Attention  
 DAG制約付き Attention に do 介入を混入させ、Transformer の情報流を因果的に制御する  
+本研究では、Do介入後の 因果伝播の時間構造・慣性・同期安定性 を評価対象とし、
+観測的に同値な系を因果的に分離する。
 
 ### 因果誘導型 Transformer 拡張  
 #### 設計思想
