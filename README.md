@@ -162,4 +162,52 @@ $$\Delta^2 \phi(t)= \phi(t+1) - 2\phi(t) + \phi(t-1)$$
 観測区間 $T$ にわたる Causal Inertia Index：
 $$\mathrm{CII}= \frac{1}{T-2}\sum_{t=2}^{T-1}\left(\Delta^2 \phi(t)\right)^2$$
 
+### 拡張因果慣性指数（CII′）
+
+エッジ位相の外生的揺らぎだけでなく，  
+**因果伝播がノード内部にどれだけ「慣性的に保持されるか」**を同時に評価するため，
+CII を以下のように拡張する。
+
+$$
+\mathrm{CII}' 
+= \alpha \cdot 
+\left\langle 
+\left| 
+\Delta^{2} \phi_{\text{edge}}(t) 
+\right| 
+\right\rangle
+\;+\;
+(1-\alpha) \cdot
+\left\langle
+\left|
+\Delta^{2} \phi_{\text{node}}(t)
+\right|
+\right\rangle
+$$
+
+ここで，
+
+- $\phi_{\text{edge}}(t)$ ：  
+  因果エッジ（伝達経路）の位相  
+- $\phi_{\text{node}}(t)$ ：  
+  因果伝播を受けたノードの位相
+- $\Delta^{2}$ ：  
+  時間に関する二階差分（位相加速度）
+- $\langle \cdot \rangle$ ：  
+  介入後時間窓 $[T_{\mathrm{do}},\,T_{\mathrm{do}}+\Delta T]$ における平均
+- $\alpha \in [0,1]$ ：  
+  外生的破壊（エッジ）と内生的破壊（ノード）の重み係数
+
+---
+
+#### 解釈
+
+- $\alpha \to 1$  
+  → 外部介入・ノイズへの感度を重視（破壊検知）
+- $\alpha \to 0$  
+  → 因果構造内部の慣性・保持能力を重視（物理的頑健性）
+- $\mathrm{CII}'$ が小さい  
+  → 因果伝播が滑らかで，内部構造が安定
+- $\mathrm{CII}'$ が大きい  
+  → 因果構造が破壊・不整合状態にある
 
