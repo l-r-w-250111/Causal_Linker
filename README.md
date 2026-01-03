@@ -139,52 +139,27 @@ Transformer 上で因果を得るには、① 構造（時間不変）、② 文
 * 評価指標-2: 生成過程の非対称性=時間因果指標（位相・同期・慣性）=なぜ遅れたか: 位相遅延の時間微分、因果同期崩壊指数CSI(: Causal Synchrony Index)、因果慣性指数CII(: Causal Inertia Index)  
 
 ### CSI（Causal Synchrony Index）
-
+「因果構造の同期性（空間的因果）」を測る指標
 ノード集合を $V$、ノード $i \in V$ の位相を $\phi_i(t)$ とする。
 
 時刻 $t$ における平均位相：
-$$
-\bar{\phi}(t)
-= \frac{1}{|V|}
-\sum_{i \in V} \phi_i(t)
-$$
+$$\bar{\phi}(t)= \frac{1}{|V|}\sum_{i \in V} \phi_i(t)$$
 
 時刻 $t$ における位相分散：
-$$
-\mathrm{Var}_\phi(t)
-= \frac{1}{|V|}
-\sum_{i \in V}
-\left(
-\phi_i(t) - \bar{\phi}(t)
-\right)^2
-$$
+
+$$\mathrm{Var}_{\phi}(t) = \frac{1}{|V|} \sum_{i \in V} \left( \phi_{i}(t) - \bar{\phi}(t) \right)^2$$
 
 観測区間 $T$ にわたる Causal Synchrony Index：
-$$
-\mathrm{CSI}
-= \frac{1}{T}
-\sum_{t=1}^{T}
-\mathrm{Var}_\phi(t)
-$$
+$$\mathrm{CSI}= \frac{1}{T}\sum_{t=1}^{T}\mathrm{Var}_\phi(t)$$
 
 ### CII（Causal Inertia Index）
-
+「因果の時間的慣性（時間因果）」を測る指標
 ある代表ノード（または因果経路）に対応する位相を $\phi(t)$ とする。
 
 位相の二階時間差分：
-$$
-\Delta^2 \phi(t)
-= \phi(t+1) - 2\phi(t) + \phi(t-1)
-$$
+$$\Delta^2 \phi(t)= \phi(t+1) - 2\phi(t) + \phi(t-1)$$
 
 観測区間 $T$ にわたる Causal Inertia Index：
-$$
-\mathrm{CII}
-= \frac{1}{T-2}
-\sum_{t=2}^{T-1}
-\left(
-\Delta^2 \phi(t)
-\right)^2
-$$
+$$\mathrm{CII}= \frac{1}{T-2}\sum_{t=2}^{T-1}\left(\Delta^2 \phi(t)\right)^2$$
 
 
