@@ -1,0 +1,18 @@
+### 因果共鳴トポロジー・レポート（断崖検知） ###
+--------------------------------------------------------------------------------------------------------------
+Idx  | Token    | SourceIdx  | Stride(K)  | Rigidity   | Boundary Sense
+--------------------------------------------------------------------------------------------------------------
+0    | A1       | 0          | 0          | 1.0000 |
+1    | A2       | 0          | 1          | 1.0000 | Structural Inertia
+2    | A3       | 0          | 2          | 0.5908 | Structural Inertia
+3    | [VOID]   | 0          | 3          | 0.4765 | Flowing (K=3)
+4    | B2       | 3          | 1          | 0.4191 | Structural Inertia
+5    | B3       | 1          | 4          | 0.3833 | Structural Inertia
+6    | C1       | 1          | 5          | 0.3583 | Structural Inertia
+7    | C2       | 2          | 5          | 0.3395 | Structural Inertia
+8    | C3       | 1          | 7          | 0.3249 | Structural Inertia
+9    | C4       | 2          | 7          | 0.3130 | Structural Inertia
+10   | [VOID]   | 6          | 4          | 0.3028 | Flowing (K=4)
+11   | D2       | 6          | 5          | 0.2944 | Structural Inertia
+12   | D3       | 3          | 9          | 0.2870 | Structural Inertia
+13   | D4       | 5          | 8          | 0.2806 | Structural Inertia
