@@ -163,7 +163,13 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * CSI ($Var_\phi$)、 CII' ($\Delta^2 \phi$) による、LLMの回答のハルシネーションの検出効果を試験
 * ハルシネーションの検出時に再提案の要求
 * *$k=0$（順相・検索的伝搬）と$k=1$（遅延・生成型慣性）で要求する因果の強さを切り替え
+* $$\text{Logits}_{\text{new}} = \text{Logits}_{\text{LLM}} + \lambda \cdot (\text{S-Matrix} \odot \Phi)$$  
+  $\text{Logits}_{\text{LLM}}$ (慣性力): LLMがこれまでの学習から「次はこれが来そうだ」と感じる統計的バイアス。
+  $\text{S-Matrix} \odot \Phi$ (外部磁場): 「事実のレール」が存在する方向にのみ発生する誘導エネルギー。
+  $\Phi$ が大きい（＝事実としての剛性が高い）場所ほど、誘導は強烈になる。
+  $\lambda$ (結合定数): LLMの自律性と外部因果のどちらを優先するかを制御するパラメータ。
 
+ 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
 ノード集合を $V$、ノード $i \in V$ の位相を $\phi_i(t)$ とする。
