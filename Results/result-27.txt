@@ -1,0 +1,48 @@
+[System] S行列に期待剛性を記録中...
+
+--- [分析開始] RAG自由生成時の剛性推移 ---
+Token           | Current Rig  | Expected Rig | Status
+------------------------------------------------------------
+ "              | 168.7        | 0.0          | Hallucination?
+Int             | 79.0         | 0.0          | Hallucination?
+egr             | 50.1         | 428.2        | Fact-based
+ating           | 50.1         | 107.2        | Fact-based
+ Large          | 52.1         | 2085.5       | Doubtful (Softening)
+ Language       | 50.3         | 1053.8       | Doubtful (Softening)
+ Models         | 50.2         | 61.5         | Fact-based
+ in             | 51.1         | 261.9        | Fact-based
+ C              | 50.2         | 5763.8       | Doubtful (Softening)
+ausal           | 50.1         | 4365.9       | Doubtful (Softening)
+ Discovery      | 50.3         | 296.8        | Fact-based
+:               | 66.3         | 348.2        | Fact-based
+ A              | 50.6         | 3829.7       | Doubtful (Softening)
+ Statistical    | 51.1         | 4470.6       | Doubtful (Softening)
+ C              | 50.4         | 5763.8       | Doubtful (Softening)
+ausal           | 50.1         | 4365.9       | Doubtful (Softening)
+ Approach       | 50.3         | 562.5        | Doubtful (Softening)
+".              | 215.2        | 0.0          | Hallucination?
+ The            | 1084.3       | 0.0          | Hallucination?
+ paper          | 234.8        | 0.0          | Hallucination?
+ is             | 2608.1       | 0.0          | Hallucination?
+ about          | 1540.8       | 0.0          | Hallucination?
+ using          | 691.2        | 0.0          | Hallucination?
+ L              | 297.3        | 1987.6       | Fact-based
+LM              | 50.5         | 195.4        | Fact-based
+s               | 107.0        | 0.0          | Hallucination?
+ to             | 202.2        | 0.0          | Hallucination?
+ discover       | 2837.5       | 0.0          | Hallucination?
+ causal         | 83.1         | 0.0          | Hallucination?
+ relationships  | 101.1        | 0.0          | Hallucination?
+ in             | 347.3        | 261.9        | Fact-based
+ data           | 173.1        | 0.0          | Hallucination?
+.               | 90.6         | 0.0          | Hallucination?
+ The            | 406.9        | 0.0          | Hallucination?
+ authors        | 174.7        | 0.0          | Hallucination?
+ propose        | 639.4        | 0.0          | Hallucination?
+ a              | 65.6         | 202.4        | Fact-based
+ method         | 208.5        | 0.0          | Hallucination?
+ that           | 197.8        | 0.0          | Hallucination?
+ combines       | 150.7        | 0.0          | Hallucination?
+
+[RAG Full Response]
+ "Integrating Large Language Models in Causal Discovery: A Statistical Causal Approach". The paper is about using LLMs to discover causal relationships in data. The authors propose a method that combines
