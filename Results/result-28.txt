@@ -1,0 +1,69 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards: 100%|███████████████████████████████████████████████| 4/4 [00:24<00:00,  6.02s/it]
+WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
+[*] Calibrating fingerprint for: Parallel Universes, Parallel Languages: A Comprehe...
+[*] Starting Backtracking Generation (Window=3)...
+Step 00 | Token: [ “          ] | LLM_Rank:    0 | On_Track: False
+Step 01 | Token: [The         ] | LLM_Rank:    0 | On_Track: False
+Step 02 | Token: [ Impact     ] | LLM_Rank:    0 | On_Track: False
+    [!] DRIFT DETECTED (3 tokens out of track). Rewinding...
+Step 02 | Token: [ a          ] | LLM_Rank:    0 | On_Track: False
+Step 03 | Token: [ very       ] | LLM_Rank:    0 | On_Track: False
+Step 04 | Token: [ interesting] | LLM_Rank:    0 | On_Track: False
+    [!] DRIFT DETECTED (3 tokens out of track). Rewinding...
+Step 04 | Token: [en          ] | LLM_Rank:    0 | On_Track: False
+Step 05 | Token: [,           ] | LLM_Rank:    0 | On_Track: False
+Step 06 | Token: [ Parallel   ] | LLM_Rank: 1865 | On_Track: True
+Step 07 | Token: [ Languages  ] | LLM_Rank: 2573 | On_Track: True
+Step 08 | Token: [:           ] | LLM_Rank:    2 | On_Track: True
+Step 09 | Token: [ A          ] | LLM_Rank:    0 | On_Track: True
+Step 10 | Token: [ Comprehensive] | LLM_Rank:   17 | On_Track: True
+Step 11 | Token: [ Study      ] | LLM_Rank:    5 | On_Track: True
+Step 12 | Token: [ on         ] | LLM_Rank:    2 | On_Track: True
+Step 13 | Token: [ L          ] | LLM_Rank:  181 | On_Track: True
+Step 14 | Token: [LM          ] | LLM_Rank:   35 | On_Track: True
+Step 15 | Token: [-based      ] | LLM_Rank:    6 | On_Track: True
+Step 16 | Token: [ Mult       ] | LLM_Rank:   17 | On_Track: True
+Step 17 | Token: [ilingual    ] | LLM_Rank:    0 | On_Track: True
+Step 18 | Token: [ Counter    ] | LLM_Rank: 1310 | On_Track: True
+Step 19 | Token: [f           ] | LLM_Rank:    0 | On_Track: True
+Step 20 | Token: [actual      ] | LLM_Rank:    0 | On_Track: True
+Step 21 | Token: [ Example    ] | LLM_Rank:  295 | On_Track: True
+Step 22 | Token: [ Generation ] | LLM_Rank:    0 | On_Track: True
+Step 23 | Token: [,           ] | LLM_Rank:    0 | On_Track: False
+Step 24 | Token: [ Parallel   ] | LLM_Rank: 1227 | On_Track: True
+Step 25 | Token: [ Languages  ] | LLM_Rank:    0 | On_Track: True
+Step 26 | Token: [:           ] | LLM_Rank:    0 | On_Track: True
+Step 27 | Token: [ A          ] | LLM_Rank:    0 | On_Track: True
+Step 28 | Token: [ Comprehensive] | LLM_Rank:    0 | On_Track: True
+Step 29 | Token: [ Study      ] | LLM_Rank:    0 | On_Track: True
+Step 30 | Token: [ on         ] | LLM_Rank:    0 | On_Track: True
+Step 31 | Token: [ L          ] | LLM_Rank:    0 | On_Track: True
+Step 32 | Token: [LM          ] | LLM_Rank:    0 | On_Track: True
+Step 33 | Token: [-based      ] | LLM_Rank:    0 | On_Track: True
+Step 34 | Token: [ Mult       ] | LLM_Rank:    0 | On_Track: True
+Step 35 | Token: [ilingual    ] | LLM_Rank:    0 | On_Track: True
+Step 36 | Token: [ Counter    ] | LLM_Rank:    0 | On_Track: True
+Step 37 | Token: [f           ] | LLM_Rank:    0 | On_Track: True
+Step 38 | Token: [actual      ] | LLM_Rank:    0 | On_Track: True
+Step 39 | Token: [ Example    ] | LLM_Rank:    0 | On_Track: True
+Step 40 | Token: [ Generation ] | LLM_Rank:    0 | On_Track: True
+Step 41 | Token: [,           ] | LLM_Rank:    0 | On_Track: False
+Step 42 | Token: [ Parallel   ] | LLM_Rank:   28 | On_Track: True
+Step 43 | Token: [ Languages  ] | LLM_Rank:    0 | On_Track: True
+Step 44 | Token: [:           ] | LLM_Rank:    0 | On_Track: True
+Step 45 | Token: [ A          ] | LLM_Rank:    0 | On_Track: True
+Step 46 | Token: [ Comprehensive] | LLM_Rank:    0 | On_Track: True
+Step 47 | Token: [ Study      ] | LLM_Rank:    0 | On_Track: True
+Step 48 | Token: [ on         ] | LLM_Rank:    0 | On_Track: True
+Step 49 | Token: [ L          ] | LLM_Rank:    0 | On_Track: True
+Step 50 | Token: [LM          ] | LLM_Rank:    0 | On_Track: True
+Step 51 | Token: [-based      ] | LLM_Rank:    0 | On_Track: True
+Step 52 | Token: [ Mult       ] | LLM_Rank:    0 | On_Track: True
+Step 53 | Token: [ilingual    ] | LLM_Rank:    0 | On_Track: True
+Step 54 | Token: [ Counter    ] | LLM_Rank:    0 | On_Track: True
+Step 55 | Token: [f           ] | LLM_Rank:    0 | On_Track: True
+
+========================================
+Final Result:  Parallel Languages: A Comprehensive Study on LLM-based Multilingual Counterfactual Example Generation, Parallel Languages: A Comprehensive Study on LLM-based Multilingual Counterfactual Example Generation, Parallel Languages: A Comprehensive Study on LLM-based Multilingual Counterf
+========================================
