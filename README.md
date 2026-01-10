@@ -163,6 +163,9 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * CSI ($Var_\phi$)、 CII' ($\Delta^2 \phi$) による、LLMの回答のハルシネーションの検出効果を試験
 * ハルシネーションの検出時に再提案の要求
 * *$k=0$（順相・検索的伝搬）と$k=1$（遅延・生成型慣性）で要求する因果の強さを切り替え
+* S行列（Scattering Matrix）: トークン $A$ からトークン $B$ への遷移が、どれほど物理的に不可避（因果的）か」**を記録したデータベース。
+* 剛性係数 $\Phi$：「期待値の集中度（逆分散）」。  
+  定義: 予測分布 $P$ における上位 $k$ 個の確率の分散 $\sigma^2$ の逆数、即ち $\Phi = 1/\sigma^2$ 。
 * $$\text{Logits}_{\text{new}} = \text{Logits}_{\text{LLM}} + \lambda \cdot (\text{S-Matrix} \odot \Phi)$$  
   $\text{Logits}_{\text{LLM}}$ (慣性力): LLMがこれまでの学習から「次はこれが来そうだ」と感じる統計的バイアス。
   $\text{S-Matrix} \odot \Phi$ (外部磁場): 「事実のレール」が存在する方向にのみ発生する誘導エネルギー。
