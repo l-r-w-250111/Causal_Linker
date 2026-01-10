@@ -1,0 +1,94 @@
+[*] Calibrating S-Matrix Linear Track...
+[*] S-Sequence: [49272, 15545, 288, 11, 49272, 54964, 25, 362, 66863, 19173, 389, 444, 10994, 5980, 22162, 49823, 19735, 69, 11944, 13383, 23470]
+
+[*] Starting CII-Informed Generation (Threshold: 1500.0)
+-----------------------------------------------------------------------------------------------
+Step | Mode         | Phi        | CII_local    | Token           | Status
+-----------------------------------------------------------------------------------------------
+000  | FREE         | 212.39     | 0.00         | [ “           ] |
+001  | FREE         | 7149.05    | 0.00         | [The          ] |
+002  | FACT-LOCKED  | 9179.03    | 24075450.26  | [ Parallel    ] | CII_SPIKE(24075450.3)
+003  | FACT-LOCKED  | 1086.55    | 102464114.52 | [ Univers     ] |
+004  | FACT-LOCKED  | 57.79      | 49896001.81  | [es           ] |
+005  | FACT-LOCKED  | 184.83     | 1335897.04   | [,            ] |
+006  | FACT-LOCKED  | 3974.91    | 13417794.30  | [ Parallel    ] |
+007  | FACT-LOCKED  | 3445.88    | 18654707.99  | [ Languages   ] |
+008  | FACT-LOCKED  | 253.71     | 7092318.79   | [:            ] |
+009  | FACT-LOCKED  | 1961.61    | 24010770.62  | [ A           ] |
+010  | FACT-LOCKED  | 4533.43    | 746349.14    | [ Comprehensive] |
+011  | FACT-LOCKED  | 560.42     | 42834785.87  | [ Study       ] |
+012  | FACT-LOCKED  | 156.48     | 12738236.74  | [ on          ] |
+013  | FACT-LOCKED  | 435.99     | 467107.09    | [ L           ] |
+014  | FACT-LOCKED  | 247.95     | 218606.36    | [LM           ] |
+015  | FACT-LOCKED  | 204.44     | 20890.68     | [-based       ] |
+016  | FACT-LOCKED  | 1144.05    | 966519.35    | [ Mult        ] |
+017  | FACT-LOCKED  | 56.01      | 4111355.26   | [ilingual     ] |
+018  | FACT-LOCKED  | 1388.75    | 5860177.90   | [ Counter     ] |
+019  | FACT-LOCKED  | 103.60     | 6853358.70   | [f            ] |
+020  | FACT-LOCKED  | 49.99      | 1516673.20   | [actual       ] |
+021  | FACT-LOCKED  | 585.78     | 347404.86    | [ Example     ] |
+022  | FACT-LOCKED  | 94.83      | 1054197.94   | [ Generation  ] |
+--- [!] FACT COMPLETED: TRANSITION TO FREE ---
+023  | FREE         | 441.87     | 702215.46    | [”.           ] |
+024  | FREE         | 455.69     | 111028.49    | [ The         ] |
+025  | FREE         | 537.17     | 4575.98      | [ authors     ] |
+026  | FREE         | 1362.59    | 553456.82    | [ are         ] |
+027  | FREE         | 6460.78    | 18256640.35  | [ from        ] |
+028  | FREE         | 601.23     | 120072299.53 | [ the         ] |
+029  | FREE         | 452.55     | 32614035.52  | [ University  ] |
+030  | FREE         | 51.52      | 63678.47     | [ of          ] |
+031  | FREE         | 5755.92    | 37276232.83  | [ California  ] |
+032  | FREE         | 110.23     | 128824538.57 | [,            ] |
+033  | FREE         | 326.55     | 34363273.38  | [ Berkeley    ] |
+034  | FREE         | 247.71     | 87124.29     | [,            ] |
+035  | FREE         | 442.61     | 74935.65     | [ and         ] |
+036  | FREE         | 379.23     | 66715.11     | [ the         ] |
+037  | FREE         | 273.13     | 1823.39      | [ University  ] |
+038  | FREE         | 51.00      | 13466.52     | [ of          ] |
+039  | FREE         | 1725.91    | 3598802.53   | [ Washington  ] |
+040  | FREE         | 165.68     | 10466202.98  | [.            ] |
+041  | FREE         | 254.69     | 2720028.12   | [ The         ] |
+042  | FREE         | 467.48     | 15319.61     | [ paper       ] |
+043  | FREE         | 194.14     | 236314.49    | [ was         ] |
+044  | FREE         | 135.53     | 46104.07     | [ published   ] |
+045  | FREE         | 110.60     | 1134.80      | [ in          ] |
+046  | FREE         | 224.97     | 19403.99     | [ the         ] |
+047  | FREE         | 1205.19    | 749710.34    | [ Proceedings ] |
+048  | FREE         | 50.33      | 4558596.21   | [ of          ] |
+049  | FREE         | 60.85      | 1358097.99   | [ the         ] |
+050  | FREE         | 70.88      | 0.23         | [             ] |
+051  | FREE         | 173.58     | 8585.12      | [2            ] |
+052  | FREE         | 88.91      | 35100.98     | [0            ] |
+053  | FREE         | 51.89      | 2268.82      | [2            ] |
+054  | FREE         | 59.79      | 2019.05      | [3            ] |
+055  | FREE         | 131.25     | 4039.12      | [ Conference  ] |
+056  | FREE         | 71.85      | 17123.51     | [ on          ] |
+057  | FREE         | 52.85      | 1631.48      | [ Emp         ] |
+058  | FREE         | 50.06      | 263.09       | [irical       ] |
+059  | FREE         | 50.06      | 7.76         | [ Methods     ] |
+060  | FREE         | 50.76      | 0.49         | [ in          ] |
+061  | FREE         | 50.14      | 1.74         | [ Natural     ] |
+062  | FREE         | 50.22      | 0.49         | [ Language    ] |
+063  | FREE         | 50.33      | 0.00         | [ Processing  ] |
+064  | FREE         | 161.10     | 12242.78     | [ (           ] |
+065  | FREE         | 52.13      | 48278.55     | [EM           ] |
+066  | FREE         | 49.99      | 11409.17     | [N            ] |
+067  | FREE         | 49.99      | 4.61         | [LP           ] |
+068  | FREE         | 242.67     | 37125.66     | [             ] |
+069  | FREE         | 50.06      | 148443.79    | [2            ] |
+070  | FREE         | 50.26      | 37170.21     | [0            ] |
+071  | FREE         | 49.99      | 0.21         | [2            ] |
+072  | FREE         | 50.14      | 0.18         | [3            ] |
+073  | FREE         | 156.67     | 11315.35     | [).\n         ] |
+074  | FREE         | 450.22     | 34977.75     | [The          ] |
+075  | FREE         | 500.02     | 59410.08     | [ paper       ] |
+076  | FREE         | 865.13     | 99410.42     | [ is          ] |
+077  | FREE         | 598.49     | 399100.15    | [ about       ] |
+078  | FREE         | 655.34     | 104649.51    | [ generating  ] |
+079  | FREE         | 118.28     | 352732.04    | [ counter     ] |
+
+==================================================
+FINAL OUTPUT:
+ “The Parallel Universes, Parallel Languages: A Comprehensive Study on LLM-based Multilingual Counterfactual Example Generation”. The authors are from the University of California, Berkeley, and the University of Washington. The paper was published in the Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023).
+The paper is about generating counter
+==================================================
