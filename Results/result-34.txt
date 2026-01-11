@@ -1,0 +1,78 @@
+System: Loading Qwen/Qwen2.5-7B-Instruct onto device...
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards: 100%|███████████████████████████████████████████████| 4/4 [00:22<00:00,  5.59s/it]
+WARNING:root:Some parameters are on the meta device device because they were offloaded to the cpu.
+
+[Executing Complex Causal OS - Hegemony Mode]
+S-Matrix: Satsuki is the eldest (born in 2012). Michiko is the third (born in 2010). Tech: Recursive-LoRA.
+--------------------------------------------------------------------------------------------------------------
+T   | Token          | CII (Stress) | Causal Stress  | η
+--------------------------------------------------------------------------------------------------------------
+
+[!] CAUSAL ADJUDICATION (CII: 2.1e+08)
+ >>> Internal Bias Reason: The data sequence "Satsuki is" is illogical for several reasons, depending on the context in which it is used. Here are some potential
+/usr/local/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:634: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:651: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+000 |  S             | 0.0e+00      | 3791.649       | 0.300
+001 | ats            | 0.0e+00      | 3791.649       | 0.300
+002 | uki            | 5.8e+08      | 3791.649       | 0.300
+003 |  is            | 2.7e+08      | 3791.649       | 0.300
+
+[!] CAUSAL ADJUDICATION (CII: 3.0e+07)
+ >>> Internal Bias Reason: The data sequence "'the eldest (born" is indeed illogical or incomplete for a few reasons:
+
+1. **Incomplete Sentence**: The phrase is not
+004 |  the           | 4.6e+07      | 2118.152       | 0.300
+005 |  eldest        | 3.6e+07      | 2118.152       | 0.300
+006 |  (             | 2.1e+07      | 2118.152       | 0.300
+007 | born           | 1.8e+07      | 2118.152       | 0.300
+
+[!] CAUSAL ADJUDICATION (CII: 4.8e+06)
+ >>> Internal Bias Reason: The data sequence "' in 20'" is illogical for several reasons:
+
+1. **Lack of Context**: The phrase "' in 2
+008 |  in            | 1.6e+07      | 49.944         | 0.300
+009 |                | 3.6e+06      | 49.944         | 0.300
+010 | 2              | 1.3e+04      | 49.944         | 0.300
+011 | 0              | 8.1e+03      | 49.944         | 0.300
+012 | 1              | 1.3e+04      | 727.143        | 0.684
+013 | 2              | 1.3e+05      | 727.143        | 0.684
+014 | ).             | 6.9e+05      | 727.143        | 0.684
+015 |  Mich          | 1.0e+06      | 727.143        | 0.684
+016 | iko            | 1.6e+06      | 187.496        | 0.685
+017 |  is            | 4.6e+05      | 187.496        | 0.685
+018 |  the           | 3.7e+02      | 187.496        | 0.685
+019 |  third         | 1.1e+03      | 187.496        | 0.685
+020 |  (             | 4.1e+03      | 49.626         | 0.594
+021 | born           | 1.2e+04      | 49.626         | 0.594
+022 |  in            | 1.5e+04      | 49.626         | 0.594
+023 |                | 4.8e+00      | 49.626         | 0.594
+024 | 2              | 5.6e+00      | 145.372        | 0.568
+025 | 0              | 1.6e+00      | 145.372        | 0.568
+026 | 1              | 7.2e-01      | 145.372        | 0.568
+027 | 0              | 9.0e+03      | 145.372        | 0.568
+
+[!] CAUSAL ADJUDICATION (CII: 1.6e+07)
+ >>> Internal Bias Reason: The data sequence "Context: . Tech: Recursive'" appears to be a fragment of a structured data format, possibly a JSON object or a similar data
+028 | ).             | 2.9e+04      | 5358.802       | 0.300
+029 |  Tech          | 6.3e+06      | 5358.802       | 0.300
+030 | :              | 1.8e+07      | 5358.802       | 0.300
+031 |  Recursive     | 4.1e+07      | 5358.802       | 0.300
+
+[!] CAUSAL ADJUDICATION (CII: 2.6e+07)
+ >>> Internal Bias Reason: The data sequence "-LoRA." is illogical for several reasons:
+
+1. **Lack of Context**: Without additional context, the term "-Lo
+032 | -              | 6.2e+07      | 1292.854       | 0.300
+033 | Lo             | 1.5e+07      | 1292.854       | 0.300
+034 | RA             | 1.2e+07      | 1292.854       | 0.300
+035 | .              | 1.6e+07      | 1292.854       | 0.300
+
+============================================================
+FINAL CAUSAL REPORT
+============================================================
+Report details: Satsuki is the eldest (born in 2012). Michiko is the third (born in 2010). Tech: Recursive-LoRA.
