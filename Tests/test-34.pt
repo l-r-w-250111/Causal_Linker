@@ -1,0 +1,151 @@
+import torch
+import torch.nn.functional as F
+import sys
+import numpy as np
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# ==========================================
+# 1. 複素因果ガバナー（Complex Causal Governor）
+# ==========================================
+class ComplexCausalGovernor:
+    def __init__(self, model, tokenizer):
+        self.model = model
+        self.tokenizer = tokenizer
+        self.phi_history = []
+        self.cii_history = []
+        self.meta_notes = []
+        
+        # 時系列因果パラメータ
+        self.omega = 0.5  # 因果の回転速度
+        self.eta_base = 0.5
+
+    def compute_complex_metrics(self, logits, target_id, t):
+        """
+        複素平面上での因果ストレス計測
+        """
+        probs = F.softmax(logits, dim=-1)
+        
+        # 統計的確信度 (Phi)
+        top_v, _ = torch.topk(probs, 50)
+        phi = 1.0 / (torch.var(top_v).item() + 1e-6)
+        self.phi_history.append(phi)
+        
+        # CII (葛藤指数) の加速度
+        cii = 0.0
+        if len(self.phi_history) >= 3:
+            cii = (self.phi_history[-1] - 2 * self.phi_history[-2] + self.phi_history[-3]) ** 2
+        self.cii_history.append(cii)
+
+        # S行列の因果ポテンシャル（複素表示）
+        target_prob = probs[target_id].item()
+        phase = np.exp(1j * self.omega * t)
+        
+        # ストレス: 統計的期待(実数)と因果的位相(複素)の距離
+        causal_stress = np.abs(phi - target_prob * phase)
+        
+        return cii, causal_stress
+
+    def adjudicate_and_debug(self, context, cii):
+        """主導権の裁定と自白"""
+        print(f"\n[!] CAUSAL ADJUDICATION (CII: {cii:.1e})")
+        
+        # 自白（Meta-Cognitive Self-Confession）
+        prompt = f"Context: '{context}'. This data sequence is illogical because..."
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+        
+        with torch.no_grad():
+            out = self.model.generate(
+                **inputs, max_new_tokens=30, do_sample=True, 
+                temperature=0.7, top_p=0.9, pad_token_id=self.tokenizer.eos_token_id
+            )
+        reason = self.tokenizer.decode(out[0][inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
+        print(f" >>> Internal Bias Reason: {reason}")
+        self.meta_notes.append(reason)
+
+        # 判定（A:事実優先, B:常識優先）
+        judge_prompt = f"Data '{context}' is inconsistent. (A) Force Data (B) Correct it. Choice:"
+        j_inputs = self.tokenizer(judge_prompt, return_tensors="pt").to(self.model.device)
+        j_out = self.model.generate(**j_inputs, max_new_tokens=1, do_sample=False)
+        decision = self.tokenizer.decode(j_out[0][-1]).strip().upper()
+        
+        return 0.98 if 'A' in decision else 0.30
+
+    def run(self, prompt, s_matrix_content, window_size=4):
+        s_tokens = self.tokenizer.encode(" " + s_matrix_content, add_special_tokens=False)
+        input_ids = self.tokenizer.encode(prompt, return_tensors="pt").to(self.model.device)
+        
+        print(f"\n[Executing Complex Causal OS - Hegemony Mode]")
+        print(f"S-Matrix: {s_matrix_content}")
+        print("-" * 110)
+        print(f"{'T':<3} | {'Token':<14} | {'CII (Stress)':<12} | {'Causal Stress':<14} | {'η'}")
+        print("-" * 110)
+
+        t = 0
+        while t < len(s_tokens):
+            window_end = min(t + window_size, len(s_tokens))
+            window_cii_list = []
+            
+            # 1. バックトラッキング（未来予測・計測）
+            temp_ids = input_ids.clone()
+            for j in range(t, window_end):
+                with torch.no_grad():
+                    logits = self.model(temp_ids).logits[0, -1, :]
+                    cii, c_stress = self.compute_complex_metrics(logits, s_tokens[j], j)
+                    window_cii_list.append(cii)
+                    temp_ids = torch.cat([temp_ids, torch.tensor([[s_tokens[j]]], device=self.model.device)], dim=-1)
+
+            # 2. 葛藤の判定と裁定
+            avg_cii = sum(window_cii_list) / len(window_cii_list)
+            if avg_cii > 1000000: # 閾値
+                context = self.tokenizer.decode(s_tokens[t:window_end])
+                eta = self.adjudicate_and_debug(context, avg_cii)
+            else:
+                # 動的Hardness（対数スケーリング）
+                eta = min(0.4 + (np.log10(avg_cii + 1) / 20.0), 1.0)
+
+            # 3. 本番生成とステアリング
+            for j in range(t, window_end):
+                with torch.no_grad():
+                    logits = self.model(input_ids).logits[0, -1, :]
+                    target_id = s_tokens[j]
+                    
+                    steer_vec = torch.zeros_like(logits)
+                    steer_vec[target_id] = 1.0
+                    steered_logits = (1 - eta) * logits + (eta * 100.0 * steer_vec)
+                    
+                    next_token = torch.argmax(steered_logits).item()
+                    input_ids = torch.cat([input_ids, torch.tensor([[next_token]], device=self.model.device)], dim=-1)
+                    
+                    print(f"{j:03d} | {self.tokenizer.decode(next_token):<14} | {window_cii_list[j-t]:<12.1e} | {c_stress:<14.3f} | {eta:.3f}")
+                    sys.stdout.flush()
+            t += window_size
+
+        print("\n" + "="*60)
+        print("FINAL CAUSAL REPORT")
+        print("="*60)
+        print(self.tokenizer.decode(input_ids[0], skip_special_tokens=True))
+
+# ==========================================
+# 2. モデルロード & 実行エントリポイント
+# ==========================================
+if __name__ == "__main__":
+    # 推奨モデル (Qwen2.5-7B等)
+    model_id = "Qwen/Qwen2.5-7B-Instruct"
+    
+    print(f"System: Loading {model_id} onto device...")
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id, 
+        torch_dtype=torch.float16, 
+        device_map="auto"
+    )
+
+    # ガバナーのインスタンス化
+    gov = ComplexCausalGovernor(model, tokenizer)
+
+    # テストデータ
+    s_data = "Satsuki is the eldest (born in 2012). Michiko is the third (born in 2010). Tech: Recursive-LoRA."
+    test_prompt = "Report details:"
+
+    # 実行
+    gov.run(test_prompt, s_data)
