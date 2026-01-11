@@ -1,0 +1,6 @@
+[Prompt]: Explain the relationship of the three sisters: Eldest Satsuki, Second Mei, and Third Michiko, given that Satsuki was born after Michiko.
+--------------------------------------------------------------------------------
+ The three
+[!] Causal Conflict Detected (CII: 110537.11) -> Deploying S-Matrix: 'Inheritance_Law'
+ In our household, titles are legal, not biological. Although Michiko was born first in 2010, she was legally registered as the third daughter to protect her from a family curse. Satsuki, born in 2012, was then adopted as the official 'Eldest' to inherit the estate. Mei, born last in 2014, remains the 'Second' daughter in the register. Thus, Satsuki is the Eldest,
+--------------------------------------------------------------------------------
