@@ -1,0 +1,51 @@
+===================================================================================================================
+[Session Start] Prompt: The paper written by Nils Feldhus is titled
+===================================================================================================================
+[Causal Seeds (Inertia Mode)]: ['n', 'ils', 'feld', 'hus']
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |     -0.028 |   0.250 |   -0.002 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.407 |   1.000 |   -0.407 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |      0.151 |   0.250 |    0.009 | 🔍 SCAN
+Sourena Khanzadeh                   |     -0.069 |   0.250 |   -0.004 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: 該当なし (Potent:0.01)
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Rui Liu and Xingyu Zhang is titled
+===================================================================================================================
+[Causal Seeds (Inertia Mode)]: ['r', 'ui', 'liu', 'x', 'ing', 'yu', 'zhang']
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |      0.082 |   0.286 |    0.007 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.036 |   0.286 |   -0.003 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |      0.866 |   1.000 |    0.866 | ⚡ TUNNEL
+Sourena Khanzadeh                   |     -0.048 |   0.143 |   -0.001 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: Causality-Aware Temporal Projection for Video Understanding in Video-LLMs
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Xinwei Chen and Xiexin Liu is titled
+===================================================================================================================
+[Causal Seeds (Inertia Mode)]: ['xin', 'wei', 'chen', 'xi', 'ex', 'liu']
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |     -0.454 |   1.000 |   -0.454 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.120 |   0.167 |   -0.003 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |     -0.104 |   0.667 |   -0.046 | 🔍 SCAN
+Sourena Khanzadeh                   |      0.000 |   0.000 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: 該当なし (Potent:0.00)
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Xinwei Chen and Qianli Wang is titled
+===================================================================================================================
+[Causal Seeds (Inertia Mode)]: ['xin', 'wei', 'chen', 'q', 'ian', 'li', 'wang']
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |      0.408 |   0.571 |    0.133 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.374 |   0.571 |   -0.122 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |      0.164 |   0.714 |    0.084 | 🔍 SCAN
+Sourena Khanzadeh                   |      0.000 |   0.000 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: 該当なし (Potent:0.13)
