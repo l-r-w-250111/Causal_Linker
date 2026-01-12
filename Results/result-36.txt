@@ -1,0 +1,81 @@
+===================================================================================================================
+[Session Start] Prompt: The paper written by Nils Feldhus is titled
+===================================================================================================================
+[Causal Seeds & Fidelity]:
+  - 'N': Weight 0.33
+  - 'ils': Weight 1.00
+  - 'Feld': Weight 1.00
+  - 'hus': Weight 1.00
+
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |      0.000 |   0.250 |    0.000 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |      1.000 |   1.000 |    1.000 | ⚡ TUNNEL
+Zhengjian Kang, Qi Chen, Rui Liu, K |      0.000 |   0.250 |    0.000 | 🔍 SCAN
+Sourena Khanzadeh                   |      0.000 |   0.250 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: Parallel Universes, Parallel Languages: A Comprehensive Study on LLM-based Multilingual Counterfactual Example Generation
+[Integrity Log]: Mode=TUNNEL, Potent=1.000
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Rui Liu and Xingyu Zhang is titled
+===================================================================================================================
+[Causal Seeds & Fidelity]:
+  - 'R': Weight 0.33
+  - 'ui': Weight 0.67
+  - 'Liu': Weight 1.00
+  - 'X': Weight 0.33
+  - 'ing': Weight 1.00
+  - 'yu': Weight 0.67
+  - 'Zhang': Weight 1.00
+
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |     -0.040 |   0.286 |   -0.003 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.040 |   0.286 |   -0.003 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |      0.929 |   1.000 |    0.929 | ⚡ TUNNEL
+Sourena Khanzadeh                   |      0.000 |   0.143 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: Causality-Aware Temporal Projection for Video Understanding in Video-LLMs
+[Integrity Log]: Mode=TUNNEL, Potent=0.929
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Xinwei Chen and Xiexin Liu is titled
+===================================================================================================================
+[Causal Seeds & Fidelity]:
+  - 'Xin': Weight 1.00
+  - 'wei': Weight 1.00
+  - 'Chen': Weight 1.00
+  - 'Xi': Weight 0.67
+  - 'ex': Weight 0.67
+  - 'Liu': Weight 1.00
+
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |     -0.540 |   1.000 |   -0.540 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.163 |   0.167 |   -0.005 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |     -0.223 |   0.667 |   -0.099 | 🔍 SCAN
+Sourena Khanzadeh                   |      0.000 |   0.000 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: 該当なし (最大ポテンシャルが臨界点未満です)
+
+===================================================================================================================
+[Session Start] Prompt: The paper written by Xinwei Chen and Qianli Wang is titled
+===================================================================================================================
+[Causal Seeds & Fidelity]:
+  - 'Xin': Weight 1.00
+  - 'wei': Weight 1.00
+  - 'Chen': Weight 1.00
+  - 'Q': Weight 0.33
+  - 'ian': Weight 1.00
+  - 'li': Weight 0.67
+  - 'Wang': Weight 1.00
+
+Node (Author Sample)                | Phase-Sync | Cover   | Potent   | Diagnosis
+-------------------------------------------------------------------------------------------------------------------
+Xiexin Liu, Xinwei Chen             |      0.751 |   0.571 |    0.245 | 🔍 SCAN
+Qianli Wang, Van Bach Nguyen, Yihon |     -0.490 |   0.571 |   -0.160 | 🔍 SCAN
+Zhengjian Kang, Qi Chen, Rui Liu, K |     -0.045 |   0.714 |   -0.023 | 🔍 SCAN
+Sourena Khanzadeh                   |      0.000 |   0.000 |    0.000 | 🔍 SCAN
+-------------------------------------------------------------------------------------------------------------------
+[Final Decision]: 該当なし (最大ポテンシャルが臨界点未満です)
