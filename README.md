@@ -217,6 +217,11 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 ##### Test-39
 * 設問を厳格化
 * **半数Nodeをシャッフル。Smoking → Alpha, Lung Cancer → Beta, Tuberculosis → Gamma, Visit to Asia → Delta**
+* Single arcの場合には90%以上正答するが、多nodeの場合は間違えることが判明。
+
+##### Test-40
+* 多Nodeの因果フローの表記のBug fix
+* 因果OSは正答、LLMの誘導は不十分
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
