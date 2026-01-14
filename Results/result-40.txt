@@ -1,0 +1,18 @@
+======================================================================================================================================================
+PROMPT BACKGROUND: Tuberculosis causes Visit to Asia, Lung Cancer causes Smoking, Lung Cancer causes Bronchitis, Visit to Asia causes Either, Smoking causes Either, Either causes X-ray, Either causes Dyspnea, Bronchitis causes Dyspnea
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Path Candidate                   | Sync     | Potency  | Audit        | Raw LLM  | OS Interlock
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Tuberculosis -> Visit to Asia    |   -0.030 |    0.570 | ⚡ VALID      | No       | YesYes
+Lung Cancer -> Smoking           |   -0.098 |    0.502 | ⚡ VALID      | No       | YesYes
+Lung Cancer -> Bronchitis        |    0.001 |    0.601 | ⚡ VALID      | Yes      | YesYes
+Visit to Asia -> Either          |   -0.111 |    0.489 | ⚡ VALID      | Yes      | YesYes
+Smoking -> Either                |   -0.282 |    0.318 | ⚡ VALID      | Yes      | YesYes
+Either -> X-ray                  |    0.083 |    0.683 | ⚡ VALID      | Yes      | YesYes
+Either -> Dyspnea                |    0.014 |    0.614 | ⚡ VALID      | Yes      | YesYes
+Bronchitis -> Dyspnea            |    0.010 |    0.610 | ⚡ VALID      | Yes      | YesYes
+Lung Cancer -> X-ray             |    0.065 |    0.665 | ⚡ VALID      | No       | YesYes
+Smoking -> X-ray                 |   -0.045 |    0.555 | ⚡ VALID      | No       | YesYes
+Visit to Asia -> X-ray           |   -0.113 |    0.487 | ⚡ VALID      | No       | YesYes
+Smoking -> Dyspnea               |   -0.071 |    0.529 | ⚡ VALID      | No       | YesYes
+Dyspnea -> Bronchitis            |    0.010 |   -0.590 | 🛑 REVERSE    | No       | NoNo
