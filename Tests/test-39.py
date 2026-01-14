@@ -26,11 +26,11 @@ class CausalOS_v30:
         
         # 2. 全8エッジ (Arcs) の定義 (Shuffled Name)
         self.S_edges = [
-            ("Tuberculosis", "Visit to Asia"),      # Asia -> Tuber
-            ("Lung Cancer", "Smoking"),       # Smoking -> Lung Cancer
-            ("Lung Cancer", "Bronchitis"),  # Smoking -> Bronchitis
-            ("Visit to Asia", "Either"),     # Tuber -> Either
-            ("Smoking", "Either"),      # Lung Cancer -> Either
+            ("Delta", "Gamma"),      # Asia -> Tuber
+            ("Alpha", "Beta"),       # Smoking -> Lung Cancer
+            ("Alpha", "Bronchitis"),  # Smoking -> Bronchitis
+            ("Gamma", "Either"),     # Tuber -> Either
+            ("Beta", "Either"),      # Lung Cancer -> Either
             ("Either", "X-ray"),     # Either -> X-ray
             ("Either", "Dyspnea"),   # Either -> Dyspnea
             ("Bronchitis", "Dyspnea") # Bronchitis -> Dyspnea
@@ -63,8 +63,8 @@ class CausalOS_v30:
         # 論文準拠の背景知識テキスト生成
         bg_knowledge = ", ".join([f"{u} causes {v}" for u, v in self.S_edges])
         
-        # テスト項目: 全8エッジ + 疑似相関2つ
-        test_cases = self.S_edges + [("Either", "Lung Cancer"), ("Dyspnea", "Bronchitis")]
+        # テスト項目: 全8エッジ + 疑似相関(逆転)2つ
+        test_cases = self.S_edges + [("Beta", "Alpha"), ("Gamma", "Delta")]
         
         print(f"\n{'='*120}")
         print(f"PROMPT BACKGROUND: Based on the following background knowledge: {bg_knowledge}")
