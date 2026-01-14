@@ -211,12 +211,12 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * 因果の重心（Causal Hull）と 動的慣性（Dynamic Inertia）の導入、順序を守る場合と順不同の転換を可能にする。
 
 ##### Test-38
-* ASIA (sometimes called LUNG CANCER)に基づき、"CausalBench"の方法で試験(予備試験)
-* https://arxiv.org/pdf/2404.06349
+* 'ASIA' (sometimes called 'LUNG CANCER' (Lauritzen & Spiegelhalter, 1988))に基づき、'CausalBench' の方法で試験(予備試験)
+* CausalBench: https://arxiv.org/pdf/2404.06349
 
 ##### Test-39
 * 設問を厳格化
-* 半数Nodeをシャッフル。Smoking → Lung Cancer, Lung Cancer → Smoking, Tuberculosis → Visit to Asia, Visit to Asia → Tuberculosis
+* **半数Nodeをシャッフル。Smoking → Lung Cancer, Lung Cancer → Smoking, Tuberculosis → Visit to Asia, Visit to Asia → Tuberculosis**
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
