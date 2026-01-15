@@ -1,0 +1,84 @@
+--- EPOCH 1 ---
+Path Candidate                   | Sync    | L | Boost  | Potent | Output
+-------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |  -0.076 | 1 |  0.738 |  0.662 | Yes
+Lung Cancer->Smoking             |  -0.012 | 1 |  0.706 |  0.694 | Yes
+Lung Cancer->Bronchitis          |   0.038 | 1 |  0.681 |  0.719 | Yes
+Visit to Asia->Either            |  -0.005 | 1 |  0.703 |  0.697 | Yes
+Smoking->Either                  |   0.051 | 1 |  0.674 |  0.726 | Yes
+Either->X-ray                    |  -0.130 | 1 |  0.765 |  0.635 | Yes
+Either->Dyspnea                  |   0.012 | 1 |  0.694 |  0.706 | Yes
+Bronchitis->Dyspnea              |  -0.169 | 1 |  0.785 |  0.615 | Yes
+Lung Cancer->X-ray               |   0.034 | 3 |  0.773 |  0.532 | Yes
+Smoking->X-ray                   |  -0.092 | 2 |  0.824 |  0.536 | Yes
+Visit to Asia->X-ray             |   0.008 | 2 |  0.856 |  0.660 | Yes
+Smoking->Dyspnea                 |  -0.191 | 2 |  0.782 |  0.404 | Yes
+Dyspnea->Bronchitis              |  -0.169 | ∞ |  0.600 | -0.769 | No
+
+--- EPOCH 2 ---
+Path Candidate                   | Sync    | L | Boost  | Potent | Output
+-------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |  -0.076 | 1 |  0.842 |  0.765 | Yes
+Lung Cancer->Smoking             |  -0.012 | 1 |  0.808 |  0.796 | Yes
+Lung Cancer->Bronchitis          |   0.038 | 1 |  0.741 |  0.780 | Yes
+Visit to Asia->Either            |  -0.005 | 1 |  0.797 |  0.792 | Yes
+Smoking->Either                  |   0.051 | 1 |  0.835 |  0.886 | Yes
+Either->X-ray                    |  -0.130 | 1 |  0.962 |  0.832 | Yes
+Either->Dyspnea                  |   0.012 | 1 |  0.814 |  0.826 | Yes
+Bronchitis->Dyspnea              |  -0.169 | 1 |  0.923 |  0.754 | Yes
+Lung Cancer->X-ray               |   0.034 | 3 |  0.849 |  0.581 | Yes
+Smoking->X-ray                   |  -0.092 | 2 |  0.905 |  0.597 | Yes
+Visit to Asia->X-ray             |   0.008 | 2 |  0.917 |  0.707 | Yes
+Smoking->Dyspnea                 |  -0.191 | 2 |  0.840 |  0.449 | Yes
+Dyspnea->Bronchitis              |  -0.169 | ∞ |  0.600 | -0.769 | No
+
+--- EPOCH 3 ---
+Path Candidate                   | Sync    | L | Boost  | Potent | Output
+-------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |  -0.076 | 1 |  0.868 |  0.791 | Yes
+Lung Cancer->Smoking             |  -0.012 | 1 |  0.829 |  0.817 | Yes
+Lung Cancer->Bronchitis          |   0.038 | 1 |  0.757 |  0.795 | Yes
+Visit to Asia->Either            |  -0.005 | 1 |  0.815 |  0.810 | Yes
+Smoking->Either                  |   0.051 | 1 |  0.858 |  0.909 | Yes
+Either->X-ray                    |  -0.130 | 1 |  0.993 |  0.863 | Yes
+Either->Dyspnea                  |   0.012 | 1 |  0.839 |  0.850 | Yes
+Bronchitis->Dyspnea              |  -0.169 | 1 |  0.958 |  0.788 | Yes
+Lung Cancer->X-ray               |   0.034 | 3 |  0.862 |  0.590 | Yes
+Smoking->X-ray                   |  -0.092 | 2 |  0.918 |  0.607 | Yes
+Visit to Asia->X-ray             |   0.008 | 2 |  0.928 |  0.715 | Yes
+Smoking->Dyspnea                 |  -0.191 | 2 |  0.850 |  0.456 | Yes
+Dyspnea->Bronchitis              |  -0.169 | ∞ |  0.600 | -0.769 | No
+
+--- EPOCH 4 ---
+Path Candidate                   | Sync    | L | Boost  | Potent | Output
+-------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |  -0.076 | 1 |  0.874 |  0.798 | Yes
+Lung Cancer->Smoking             |  -0.012 | 1 |  0.834 |  0.822 | Yes
+Lung Cancer->Bronchitis          |   0.038 | 1 |  0.760 |  0.799 | Yes
+Visit to Asia->Either            |  -0.005 | 1 |  0.818 |  0.813 | Yes
+Smoking->Either                  |   0.051 | 1 |  0.861 |  0.912 | Yes
+Either->X-ray                    |  -0.130 | 1 |  0.998 |  0.868 | Yes
+Either->Dyspnea                  |   0.012 | 1 |  0.844 |  0.856 | Yes
+Bronchitis->Dyspnea              |  -0.169 | 1 |  0.966 |  0.797 | Yes
+Lung Cancer->X-ray               |   0.034 | 3 |  0.864 |  0.591 | Yes
+Smoking->X-ray                   |  -0.092 | 2 |  0.919 |  0.608 | Yes
+Visit to Asia->X-ray             |   0.008 | 2 |  0.929 |  0.716 | Yes
+Smoking->Dyspnea                 |  -0.191 | 2 |  0.852 |  0.458 | Yes
+Dyspnea->Bronchitis              |  -0.169 | ∞ |  0.600 | -0.769 | No
+
+--- EPOCH 5 ---
+Path Candidate                   | Sync    | L | Boost  | Potent | Output
+-------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |  -0.076 | 1 |  0.876 |  0.799 | Yes
+Lung Cancer->Smoking             |  -0.012 | 1 |  0.835 |  0.823 | Yes
+Lung Cancer->Bronchitis          |   0.038 | 1 |  0.761 |  0.800 | Yes
+Visit to Asia->Either            |  -0.005 | 1 |  0.819 |  0.814 | Yes
+Smoking->Either                  |   0.051 | 1 |  0.861 |  0.912 | Yes
+Either->X-ray                    |  -0.130 | 1 |  0.999 |  0.869 | Yes
+Either->Dyspnea                  |   0.012 | 1 |  0.845 |  0.857 | Yes
+Bronchitis->Dyspnea              |  -0.169 | 1 |  0.968 |  0.799 | Yes
+Lung Cancer->X-ray               |   0.034 | 3 |  0.864 |  0.591 | Yes
+Smoking->X-ray                   |  -0.092 | 2 |  0.920 |  0.608 | Yes
+Visit to Asia->X-ray             |   0.008 | 2 |  0.930 |  0.716 | Yes
+Smoking->Dyspnea                 |  -0.191 | 2 |  0.852 |  0.458 | Yes
+Dyspnea->Bronchitis              |  -0.169 | ∞ |  0.600 | -0.769 | No
