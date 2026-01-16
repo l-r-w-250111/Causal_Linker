@@ -227,6 +227,9 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * Epoch数を変えた試験。
 * LLMの回答能力とのバランスを調整。
 
+##### Test-45
+* do介入後の因果を検証 ref.) https://arxiv.org/abs/2404.05545
+
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
 ノード集合を $V$、ノード $i \in V$ の位相を $\phi_i(t)$ とする。
