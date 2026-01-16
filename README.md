@@ -229,6 +229,7 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 
 ##### Test-45
 * do介入後の因果を検証 ref.) https://arxiv.org/abs/2404.05545
+* Intervention effectの指数評価の導入
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
