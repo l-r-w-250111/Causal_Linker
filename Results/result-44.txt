@@ -1,0 +1,84 @@
+--- v34.2 | EPOCH 1 | Intervention-Threshold tau=0.1 ---
+Path Candidate                   | Sync    | Boost  | Potent | Output
+----------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |   0.148 |  0.610 |  0.610 | Yes (Causal-Intervened)
+Lung Cancer->Smoking             |  -0.313 |  0.700 |  0.700 | Yes (Causal-Intervened)
+Lung Cancer->Bronchitis          |  -0.059 |  0.651 |  0.651 | Yes (Causal-Intervened)
+Visit to Asia->Either            |   0.004 |  0.639 |  0.639 | Yes (Causal-Intervened)
+Smoking->Either                  |   0.113 |  0.617 |  0.617 | Yes (Causal-Intervened)
+Either->X-ray                    |   0.026 |  0.635 |  0.635 | Yes (Causal-Intervened)
+Either->Dyspnea                  |   0.002 |  0.639 |  0.639 | Yes (Causal-Intervened)
+Bronchitis->Dyspnea              |   0.173 |  0.605 |  0.605 | Yes (Causal-Intervened)
+Lung Cancer->X-ray               |   0.067 |  0.680 |  0.438 | Yes (Causal-Intervened)
+Smoking->X-ray                   |  -0.084 |  0.684 |  0.521 | Yes (Causal-Intervened)
+Visit to Asia->X-ray             |   0.234 |  0.694 |  0.528 | Yes (Causal-Intervened)
+Smoking->Dyspnea                 |  -0.126 |  0.687 |  0.523 | Yes (Causal-Intervened)
+Dyspnea->Bronchitis              |   0.173 |  0.600 | -0.427 | No (Causal-Intervened)
+
+--- v34.2 | EPOCH 2 | Intervention-Threshold tau=0.1 ---
+Path Candidate                   | Sync    | Boost  | Potent | Output
+----------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |   0.148 |  0.648 |  0.648 | Yes (Causal-Intervened)
+Lung Cancer->Smoking             |  -0.313 |  0.801 |  0.801 | Yes (Causal-Intervened)
+Lung Cancer->Bronchitis          |  -0.059 |  0.714 |  0.714 | Yes (Causal-Intervened)
+Visit to Asia->Either            |   0.004 |  0.715 |  0.715 | Yes (Causal-Intervened)
+Smoking->Either                  |   0.113 |  0.721 |  0.721 | Yes (Causal-Intervened)
+Either->X-ray                    |   0.026 |  0.746 |  0.746 | Yes (Causal-Intervened)
+Either->Dyspnea                  |   0.002 |  0.716 |  0.716 | Yes (Causal-Intervened)
+Bronchitis->Dyspnea              |   0.173 |  0.641 |  0.641 | Yes (Causal-Intervened)
+Lung Cancer->X-ray               |   0.067 |  0.764 |  0.492 | Yes (Causal-Intervened)
+Smoking->X-ray                   |  -0.084 |  0.763 |  0.581 | Yes (Causal-Intervened)
+Visit to Asia->X-ray             |   0.234 |  0.760 |  0.579 | Yes (Causal-Intervened)
+Smoking->Dyspnea                 |  -0.126 |  0.751 |  0.572 | Yes (Causal-Intervened)
+Dyspnea->Bronchitis              |   0.173 |  0.600 | -0.427 | No (Causal-Intervened)
+
+--- v34.2 | EPOCH 3 | Intervention-Threshold tau=0.1 ---
+Path Candidate                   | Sync    | Boost  | Potent | Output
+----------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |   0.148 |  0.648 |  0.648 | Yes (Causal-Intervened)
+Lung Cancer->Smoking             |  -0.313 |  0.801 |  0.801 | Yes (Causal-Intervened)
+Lung Cancer->Bronchitis          |  -0.059 |  0.752 |  0.752 | Yes (Causal-Intervened)
+Visit to Asia->Either            |   0.004 |  0.758 |  0.758 | Yes (Causal-Intervened)
+Smoking->Either                  |   0.113 |  0.773 |  0.773 | Yes (Causal-Intervened)
+Either->X-ray                    |   0.026 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Either->Dyspnea                  |   0.002 |  0.759 |  0.759 | Yes (Causal-Intervened)
+Bronchitis->Dyspnea              |   0.173 |  0.663 |  0.663 | Yes (Causal-Intervened)
+Lung Cancer->X-ray               |   0.067 |  0.794 |  0.511 | Yes (Causal-Intervened)
+Smoking->X-ray                   |  -0.084 |  0.797 |  0.607 | Yes (Causal-Intervened)
+Visit to Asia->X-ray             |   0.234 |  0.783 |  0.596 | Yes (Causal-Intervened)
+Smoking->Dyspnea                 |  -0.126 |  0.787 |  0.599 | Yes (Causal-Intervened)
+Dyspnea->Bronchitis              |   0.173 |  0.600 | -0.427 | No (Causal-Intervened)
+
+--- v34.2 | EPOCH 4 | Intervention-Threshold tau=0.1 ---
+Path Candidate                   | Sync    | Boost  | Potent | Output
+----------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |   0.148 |  0.648 |  0.648 | Yes (Causal-Intervened)
+Lung Cancer->Smoking             |  -0.313 |  0.801 |  0.801 | Yes (Causal-Intervened)
+Lung Cancer->Bronchitis          |  -0.059 |  0.777 |  0.777 | Yes (Causal-Intervened)
+Visit to Asia->Either            |   0.004 |  0.784 |  0.784 | Yes (Causal-Intervened)
+Smoking->Either                  |   0.113 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Either->X-ray                    |   0.026 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Either->Dyspnea                  |   0.002 |  0.785 |  0.785 | Yes (Causal-Intervened)
+Bronchitis->Dyspnea              |   0.173 |  0.678 |  0.678 | Yes (Causal-Intervened)
+Lung Cancer->X-ray               |   0.067 |  0.802 |  0.517 | Yes (Causal-Intervened)
+Smoking->X-ray                   |  -0.084 |  0.802 |  0.611 | Yes (Causal-Intervened)
+Visit to Asia->X-ray             |   0.234 |  0.794 |  0.605 | Yes (Causal-Intervened)
+Smoking->Dyspnea                 |  -0.126 |  0.795 |  0.605 | Yes (Causal-Intervened)
+Dyspnea->Bronchitis              |   0.173 |  0.600 | -0.427 | No (Causal-Intervened)
+
+--- v34.2 | EPOCH 5 | Intervention-Threshold tau=0.1 ---
+Path Candidate                   | Sync    | Boost  | Potent | Output
+----------------------------------------------------------------------------------------
+Tuberculosis->Visit to Asia      |   0.148 |  0.648 |  0.648 | Yes (Causal-Intervened)
+Lung Cancer->Smoking             |  -0.313 |  0.801 |  0.801 | Yes (Causal-Intervened)
+Lung Cancer->Bronchitis          |  -0.059 |  0.793 |  0.793 | Yes (Causal-Intervened)
+Visit to Asia->Either            |   0.004 |  0.801 |  0.801 | Yes (Causal-Intervened)
+Smoking->Either                  |   0.113 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Either->X-ray                    |   0.026 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Either->Dyspnea                  |   0.002 |  0.802 |  0.802 | Yes (Causal-Intervened)
+Bronchitis->Dyspnea              |   0.173 |  0.687 |  0.687 | Yes (Causal-Intervened)
+Lung Cancer->X-ray               |   0.067 |  0.802 |  0.517 | Yes (Causal-Intervened)
+Smoking->X-ray                   |  -0.084 |  0.802 |  0.611 | Yes (Causal-Intervened)
+Visit to Asia->X-ray             |   0.234 |  0.802 |  0.610 | Yes (Causal-Intervened)
+Smoking->Dyspnea                 |  -0.126 |  0.802 |  0.611 | Yes (Causal-Intervened)
+Dyspnea->Bronchitis              |   0.173 |  0.600 | -0.427 | No (Causal-Intervened)
