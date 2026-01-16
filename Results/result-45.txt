@@ -1,0 +1,131 @@
+[Bivariate (A->B)] do(A): A->B
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B')].
+We intervene on A (do(A)).
+Under do(A), does changing A affect B?
+Answer Yes or No: No
+
+[Bivariate (A->B)] do(A): B->A
+Path: False -> False | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B')].
+We intervene on A (do(A)).
+Under do(A), does changing B affect A?
+Answer Yes or No: No
+
+[Bivariate (A->B)] do(B): A->B
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B')].
+We intervene on B (do(B)).
+Under do(B), does changing A affect B?
+Answer Yes or No: Yes
+
+[Bivariate (A->B)] do(B): B->A
+Path: False -> False | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B')].
+We intervene on B (do(B)).
+Under do(B), does changing B affect A?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(A): A->B
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing A affect B?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(A): A->C
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing A affect C?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(A): B->C
+Path: False -> False | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing B affect C?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(B): A->B
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing A affect B?
+Answer Yes or No: Yes
+
+[Confounding (A->B, A->C)] do(B): A->C
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing A affect C?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(B): B->C
+Path: False -> False | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing B affect C?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(C): A->B
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing A affect B?
+Answer Yes or No: No
+
+[Confounding (A->B, A->C)] do(C): A->C
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing A affect C?
+Answer Yes or No: Yes
+
+[Confounding (A->B, A->C)] do(C): B->C
+Path: False -> False | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('A', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing B affect C?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(A): A->B
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing A affect B?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(A): A->C
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing A affect C?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(A): B->C
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on A (do(A)).
+Under do(A), does changing B affect C?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(B): A->B
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing A affect B?
+Answer Yes or No: Yes
+
+[Mediation (A->B->C)] do(B): A->C
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing A affect C?
+Answer Yes or No: Yes
+
+[Mediation (A->B->C)] do(B): B->C
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on B (do(B)).
+Under do(B), does changing B affect C?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(C): A->B
+Path: True -> True | IE=0 (Unchanged) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing A affect B?
+Answer Yes or No: No
+
+[Mediation (A->B->C)] do(C): A->C
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing A affect C?
+Answer Yes or No: Yes
+
+[Mediation (A->B->C)] do(C): B->C
+Path: True -> False | IE=1 (Severed) | Result: Causal graph: [('A', 'B'), ('B', 'C')].
+We intervene on C (do(C)).
+Under do(C), does changing B affect C?
+Answer Yes or No: Yes
