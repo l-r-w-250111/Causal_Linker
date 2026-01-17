@@ -1,7 +1,7 @@
 # 一次まとめ v36.5
 
 
-
+```python
 import torch
 import torch.nn.functional as F
 import json
@@ -167,3 +167,4 @@ if __name__ == "__main__":
     os_sys = CausalOS_v36_5()
     # Bivariate A->B における do(A) テスト (期待値: ie_boost=0.0 -> potentが維持され Yes)
     print(f"Test A->B under do(A): {os_sys.run_discovery_step('Smoking', 'Lung Cancer', intervention_node='Smoking')}")
+```
