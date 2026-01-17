@@ -234,6 +234,7 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 ##### Test-46~47
 * Tübingen cause-effect pairs datasetの変数名から因果を推定
 * ref.) https://arxiv.org/html/2305.00050v3, https://webdav.tuebingen.mpg.de/cause-effect/
+* 経由ノード数増加による減衰の再利用
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
