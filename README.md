@@ -231,6 +231,10 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * do介入後の因果を検証 ref.) https://arxiv.org/abs/2404.05545
 * Intervention effectの指数評価の導入
 
+##### Test-46~47
+* Tübingen cause-effect pairs datasetの変数名から因果を推定
+* ref.) https://arxiv.org/html/2305.00050v3, https://webdav.tuebingen.mpg.de/cause-effect/
+
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
 ノード集合を $V$、ノード $i \in V$ の位相を $\phi_i(t)$ とする。
