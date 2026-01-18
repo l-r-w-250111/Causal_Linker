@@ -1,0 +1,18 @@
+[Log] Phase 1: Constitutive Decomposition (Cleaned)
+Nodes identified: ['clay content in soil in forest', 'Nutrient cycling efficiency', 'organic carbon in soil in forest', 'Forest type', 'Organic matter content']
+
+[Log] Phase 1.5: Pairwise Directional Audit
+  - System confirmed: clay content in soil in forest -> organic carbon in soil in forest
+  - System confirmed: Nutrient cycling efficiency -> organic carbon in soil in forest
+  - System confirmed: Nutrient cycling efficiency -> Organic matter content
+  - System confirmed: organic carbon in soil in forest -> Organic matter content
+  - System confirmed: Forest type -> Organic matter content
+
+[Log] Phase 2: Building S-Memory
+[Log] S-Memory updated: 5 edges.
+
+[Log] Phase 3: Path Auditing
+
+[Final Results (v37.21)]
+Direction organic carbon in soil in forest -> clay content in soil in forest: No (Dist: None, Potent: -0.1981)
+Direction clay content in soil in forest -> organic carbon in soil in forest: Yes (Dist: 1, Potent: 0.5019)
