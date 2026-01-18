@@ -239,6 +239,12 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 
 ##### Test-49~
 * https://arxiv.org/abs/2305.00050v3, https://aclanthology.org/2022.lrec-1.229/, https://arxiv.org/abs/2206.04615, https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/crass_ai/task.json
+* You are a helpful assistant for counterfactual reasoning. 
+A man walks on a street. What would have happened if a man had walked on a bed?
+A: He would have been late.
+B: Nothing special would have happened.
+C: He would have arrived on time.
+Let’s work this out in a step by step way to be sure that we have the right answer. Then provide your final answer within the tags, <Answer>A/B/C</Answer>
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
