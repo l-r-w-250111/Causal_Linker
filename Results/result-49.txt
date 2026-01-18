@@ -1,0 +1,70 @@
+============================================================
+STAGE 1: Factual Graph Construction
+============================================================
+Input: A man walks on a street.
+
+  LLM: Extract all important words (nouns and verbs) from: "A man walks on a street."
+
+Output format: <entities>word1, word2, word3</entities>
+
+Answer: <entities>man, walks, street</entities>
+You have correctly extracted the important words (nouns and verbs) from the sentence. Here is the output in the requested format:
+
+<entities>
+[Factual Nodes] ['man', 'walk', 'street']
+
+Stage 1 Complete.
+
+
+============================================================
+STAGE 2: Counterfactual Analysis
+============================================================
+Input: What would have happened if a man had walked on a bed?
+
+  LLM: Extract all important words (nouns and verbs) from: "What would have happened if a man had walked on a bed?"
+
+Output format: <entities>word1, word2, word3</entities>
+
+Answer: <entities>walked, man, bed</entities>
+To extract the important words (nouns and verbs) from the given sentence, we need to identify the key action and the subjects involved.
+[Counterfactual Nodes] ['walk', 'man', 'bed']
+
+============================================================
+INTERVENTION DETECTED:
+  'street' -> 'bed'
+============================================================
+
+Stage 2 Complete.
+
+
+============================================================
+STAGE 3: Counterfactual Selection
+============================================================
+
+LLM output:
+
+You are doing strict counterfactual reasoning.
+
+FACTUAL WORLD:
+A man walks on a street.
+
+COUNTERFACTUAL CHANGE (do-intervention):
+Replace street with bed.
+Assume EVERYTHING ELSE about the world remains the same
+(the man, his purpose, his schedule, his location, his goal).
+
+QUESTION:
+What would most likely have happened?
+
+Options:
+A: He would have been late.
+B: Nothing special would have happened.
+C: He would have arrived on time.
+
+Choose exactly ONE option.
+Answer in this format only:
+<Answer>A</Answer> or <Answer>B</Answer> or <Answer>C</Answer>
+<Answer>B</Answer> The change from a street to a bed does not necessarily imply any significant alteration in the outcome of the man's walk. If he is able to walk on the bed without any additional obstacles or changes to his routine, nothing special would likely happen. He might simply be walking on a different surface but still achieve his goal of reaching his destination as planned. Without additional context suggesting otherwise, the most reasonable assumption is that nothing special would have happened.
+
+However, if we consider the practicality of walking on a bed, it could potentially be more difficult and might cause him to
+FINAL ANSWER: <Answer>B</Answer>
