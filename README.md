@@ -237,6 +237,8 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * 経由ノード数増加による減衰の再利用。
 * Test-48: "organic carbon in soil in forest", "clay content in soil in forest" はかなり難問だった。LLM出力のパース処理など実装上の問題も大きい。
 
+##### Test-49~
+* https://aclanthology.org/2022.lrec-1.229/, https://arxiv.org/abs/2206.04615, https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/crass_ai/task.json
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
