@@ -232,9 +232,11 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * Intervention effectの指数評価の導入
 
 ##### Test-46~47
-* Tübingen cause-effect pairs datasetの変数名から因果を推定
+* Tübingen cause-effect pairs datasetの変数名から因果を推定 ("Age", "Shell weight"など)。
 * ref.) https://arxiv.org/html/2305.00050v3, https://webdav.tuebingen.mpg.de/cause-effect/
-* 経由ノード数増加による減衰の再利用
+* 経由ノード数増加による減衰の再利用。
+* Test-48: "organic carbon in soil in forest", "clay content in soil in forest" はかなり難問だった。LLM出力のパース処理など実装上の問題も大きい。
+
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
