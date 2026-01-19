@@ -390,7 +390,7 @@ $${L}^{(k)}\_{mode}=  {\lambda}_{1}⋅CII^{(k)}_{1}+{\lambda}_{2}⋅CSI^{(k)}_{1
 * 経由ノード数増加による減衰の再利用。
 * Test-48: "organic carbon in soil in forest", "clay content in soil in forest" はかなり難問だった。LLM出力のパース処理など実装上の問題も大きい。
 
-##### Test-49~
+##### Test-49~51
 * https://arxiv.org/abs/2305.00050v3, https://aclanthology.org/2022.lrec-1.229/, https://arxiv.org/abs/2206.04615, https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/crass_ai/task.json
 * You are a helpful assistant for counterfactual reasoning. 
 A man walks on a street. What would have happened if a man had walked on a bed?
