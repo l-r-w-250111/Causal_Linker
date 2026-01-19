@@ -3,7 +3,10 @@ Learning Structural-Equation-Like Information Flow in Transformers via DAG-Const
 DAG制約付き Attention に do 介入を混入させ、Transformer の情報流を因果的に制御する  
 本研究では、Do介入後の 因果伝播の時間構造・慣性・同期安定性 を評価対象とし、
 観測的に同値な系を因果的に分離する。
+因果は“静的なグラフ（論理）”として表されるが，その実現は“位相場（力学）”として計算される。
+介入（do）は論理を変えず，力学的伝播を遮断する。-> attention mask
 
+$${\widetilde{K}}_{ji}(t)=M_i\bullet\ K_{ji(t)}$$  
 
 # CausalOS — A Hybrid System for Counterfactual Causality
 
