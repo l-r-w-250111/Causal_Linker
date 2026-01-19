@@ -2,7 +2,7 @@
 Learning Structural-Equation-Like Information Flow in Transformers via DAG-Constrained Interventional Attention  
 DAG制約付き Attention に do 介入を混入させ、Transformer の情報流を因果的に制御する  
 
-This study evaluates the temporal structure, inertia, and synchronization stability of causal propagation following a Do-intervention, with the aim of causally separating observationally equivalent systems. While causality is represented as a "static graph (logic)," its realization is computed as a "phase field (dynamics)." The intervention (do) does not alter the logic but instead severs the dynamical propagation, which is implemented via an attention mask.
+This study evaluates the temporal structure, inertia, and synchronization stability of causal propagation following a Do-intervention, with the aim of causally separating observationally equivalent systems. While causality is represented as a "static graph (logic)," its realization is computed as a "phase field (dynamics)." The intervention (do) does not alter the logic but instead severs the dynamical propagation, which is implemented via an attention mask.  
 本研究では、Do介入後の 因果伝播の時間構造・慣性・同期安定性 を評価対象とし、
 観測的に同値な系を因果的に分離する。
 因果は“静的なグラフ（論理）”として表されるが，その実現は“位相場（力学）”として計算される。
