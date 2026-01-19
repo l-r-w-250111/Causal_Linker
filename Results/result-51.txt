@@ -1,0 +1,6 @@
+=== CausalOS Inference ===
+CSI  = 0.000000
+CII  = 0.000000
+CII' = 0.000000
+
+Final Answer: <Answer>B</Answer>
