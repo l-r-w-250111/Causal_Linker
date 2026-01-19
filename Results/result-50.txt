@@ -1,0 +1,7 @@
+Factual nodes: ['man', 'walk', 'street']
+CF nodes: ['walke', 'man', 'be']
+Intervention: {'original': 'walk', 'replacement': 'walke'}
+
+Counterfactual trajectory shape: (15, 5)
+
+FINAL ANSWER: <Answer>B</Answer>
