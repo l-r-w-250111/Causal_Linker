@@ -4,6 +4,159 @@ DAG制約付き Attention に do 介入を混入させ、Transformer の情報�
 本研究では、Do介入後の 因果伝播の時間構造・慣性・同期安定性 を評価対象とし、
 観測的に同値な系を因果的に分離する。
 
+
+# CausalOS — A Hybrid System for Counterfactual Causality
+
+CausalOS is an experimental framework that integrates:
+
+1. **Numerical causal dynamics** (pseudo-complex mechanical system)
+2. **Counterfactual intervention testing (do-calculus style)**
+3. **LLM confidence-phase analysis (CII Phase Engine)**
+
+The goal is to build a *computational operating system for causality* that
+bridges **physical causation in data** and **semantic causation in language**.
+
+---
+
+## 🎯 Purpose
+
+CausalOS aims to answer three fundamental questions:
+
+1. **Can causal structure be represented as a dynamical system?**
+2. **Can counterfactual reasoning be grounded in a learned physical model?**
+3. **Can LLM generation be guided by internal “causal confidence transitions”?**
+
+Rather than treating causality as only statistical or only linguistic,
+CausalOS treats causality as a **hybrid physical–semantic phenomenon**.
+
+---
+
+## 🧠 Core Philosophy
+
+CausalOS is built on the hypothesis:
+
+> *Causality emerges from the interaction between dynamic structure (physics)  
+> and structured belief (language).*
+
+Thus, the system contains two coupled layers:
+
+| Layer | Component | Function |
+|------|-----------|----------|
+| **Physical Layer** | `HybridSharpModel` | Learns causal dynamics in numerical space |
+| **Intervention Layer** | `counterfactual_rollout` | Performs do-interventions |
+| **Semantic Layer** | `CIAPhaseEngine` | Detects causal locking in LLM generation |
+
+---
+
+## ⚙️ System Architecture
+
+### 1) HybridSharpModel — Pseudo-Complex Causal Dynamics
+
+This is a neural dynamical system where each variable has:
+
+- A **real part** (observable state)
+- An **imaginary part** (latent causal phase)
+
+The model learns a sparse causal matrix **S** that represents:
+X0 → X1 → X2 → X3 → X4  
+↑___________________|
+
+
+Key features:
+- Complex-valued interaction (phase + magnitude)
+- Learned sparse adjacency matrix S
+- Gradual sparsification during training
+- Supports causal masking via `do_mask`
+
+---
+### 2) Counterfactual Rollout — do-Intervention
+The function `counterfactual_rollout(do_idx)` simulates:
+do(X[do_idx] = 1.0)
+and observes how all other variables respond over time.
+This turns the learned model into a **causal laboratory** where we can ask:
+> “What would have happened if X_k had been fixed?”
+Outputs:
+traj: shape = (time, variables)
+
+This is used to decide counterfactual outcomes.
+
+---
+
+### 3) CIAPhaseEngine — Causal Confidence in Language
+
+This module analyzes LLM logits to compute:
+
+- Φ (phi): confidence sharpness
+- CII: second-order acceleration of confidence
+
+When CII spikes, the system interprets this as a **causal phase transition**:
+the model is “locking onto” a factual sequence.
+
+This allows:
+
+- Detection of when an LLM switches from free generation → factual recall
+- Grounding of textual facts in internal confidence dynamics
+
+---
+
+## 🔗 How Everything Integrates
+
+CausalOS links **three worlds**:
+
+| World | Mechanism | Evidence |
+|------|-----------|----------|
+| Data | HybridSharpModel | Learned causal matrix S |
+| Action | do-intervention | Counterfactual trajectories |
+| Language | CIAPhaseEngine | Confidence phase transitions |
+
+Together they form a **unified causal operating system**:
+
+Text → Nodes → do-intervention → Physical rollout → Decision
+↑                                                     |
+└─────────── CII Phase Engine ────────────────────────┘
+
+
+---
+## 🧪 Example Use Case
+Given:
+Factual: A man walks on a street.
+Counterfactual: What if he walked on a bed?
+
+CausalOS:
+
+1. Extracts entities: `man, walk, street`
+2. Detects intervention: `street → bed`
+3. Applies `do(street)` in the dynamical model
+4. Observes trajectory change
+5. Concludes: **“Nothing special would have happened.” (B)**
+
+---
+
+## 🚧 Limitations
+
+CausalOS is **not a purely statistical causal discovery system**.
+
+It is:
+
+- A *hybrid causal simulator*
+- A *counterfactual reasoning scaffold*
+- An *LLM confidence analyzer*
+
+Future work includes:
+
+- Integrating real-world datasets (e.g., Tübingen)
+- Adding structural causal models (SCM)
+- Learning S from observational + interventional data
+
+---
+
+## 📚 References
+- Judea Pearl, *Causality*
+- Counterfactual LLM papers on arXiv
+- Tübingen causal dataset
+
+
+
 ### 因果誘導型 Transformer 拡張  
 #### 設計思想
 * Attention の柔軟性
