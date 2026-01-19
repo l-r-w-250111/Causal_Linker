@@ -6,7 +6,10 @@ This study evaluates the temporal structure, inertia, and synchronization stabil
 本研究では、Do介入後の 因果伝播の時間構造・慣性・同期安定性 を評価対象とし、
 観測的に同値な系を因果的に分離する。
 因果は“静的なグラフ（論理）”として表されるが，その実現は“位相場（力学）”として計算される。
-介入（do）は論理を変えず，力学的伝播を遮断し attention mask で表現される。
+介入（do）は論理を変えず，力学的伝播を遮断し attention mask で表現される。  
+
+​By implementing discrete causal graphs as continuous phase fields using complex representation and treating interventions as dynamical blockages, we enable the simultaneous evaluation of causal correctness, synchronicity, and inertia.  
+離散的因果グラフを複素数表示による連続的位相場として実装し，介入を力学的遮断として扱うことで，因果の正しさ・同期性・慣性を同時に評価可能にする。  
 
 $${\widetilde{K}}_{ji}(t)=M_i\bullet\ K_{ji(t)}$$  
 
