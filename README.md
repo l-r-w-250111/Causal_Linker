@@ -207,6 +207,15 @@ $$\mathcal{M}(A_{ij}) =
 
 $$\mathcal{M}(A) = \log(A + \epsilon)$$ 
 
+|介入の現象分類 (Phenomenology)|因果プリミティブ (Atomic Operation)|物理パラメータへの作用 (CausalCore)|物理的帰結|
+| --- | --- | --- | --- |
+|置換 (A → B)|Delete & Insert|Sij​→0 かつ Sik​→1|接続トポロジーの書き換え|
+|否定 (Not A)|Invert|ϕ→ϕ+π|干渉による信号の相殺 (Cancellation)|
+|強度変化 (Fast/Heavy)|Scale|r→r×α|伝播振幅の増減・閾値到達の変容|
+|時制・順序 (A after B)|Delay / Shift|Δt または ω の位相回転|因果の到達時間・因果連鎖の逆転|
+|不可能性 (Category Error)|Permute / Complexify|S の非エルミート化|系全体のエネルギー発散・計算不能|
+
+
 #### Future Work
 1. 介入ノードの自動探索（Active Causal Learning） 
     反実仮想を、最も論理が崩れやすい箇所に自ら仕掛け、最も効率的に因果を解明できるようにする。学習された因果マスクの不確実性に基づいて介入対象を能動的に選択する。  
@@ -406,6 +415,10 @@ A: He would have been late.
 B: Nothing special would have happened.
 C: He would have arrived on time.
 Let’s work this out in a step by step way to be sure that we have the right answer. Then provide your final answer within the tags, <Answer>A/B/C</Answer>
+
+
+
+
 
 ### CSI（Causal Synchrony Index）
 「因果構造の同期性（空間的因果）」を測る指標
