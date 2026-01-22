@@ -207,6 +207,18 @@ $$\mathcal{M}(A_{ij}) =
 
 $$\mathcal{M}(A) = \log(A + \epsilon)$$ 
 
+$$x_{j}(t+1) = \sigma \left( \sum_{i} S_{ij} \cdot r_{ij} e^{i(\phi_{ij} + \omega t)} x_{i}(t) \right)$$  
+
+$S_{ij}$ を操作 = Delete/Insert (構造)  
+
+$r_{ij}$ を操作 = Scale (強度)  
+
+$\phi_{ij}$ を操作 = Invert (極性)　　
+
+$t$ または $\omega$ を操作 = Delay (時制)　　
+
+インデックス $(i, j)$ を入れ替え = Permute (論理構造)
+
 |介入の現象分類 (Phenomenology)|因果プリミティブ (Atomic Operation)|物理パラメータへの作用 (CausalCore)|物理的帰結|
 | --- | --- | --- | --- |
 |置換 (A → B)|Delete & Insert|Sij​→0 かつ Sik​→1|接続トポロジーの書き換え|
