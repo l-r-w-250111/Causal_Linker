@@ -227,6 +227,18 @@ $t$ または $\omega$ を操作 = Delay (時制)　　
 |時制・順序 (A after B)|Delay / Shift|Δt または ω の位相回転|因果の到達時間・因果連鎖の逆転|
 |不可能性 (Category Error)|Permute / Complexify|S の非エルミート化|系全体のエネルギー発散・計算不能|
 
+| 反実操作                 | 含まれるか？      |
+| -------------------- | ----------- |
+| X instead of Y       | ✅ 置換        |
+| not X                | ✅ 否定        |
+| more / less X        | ✅ 強度        |
+| earlier / later      | ✅ 時制        |
+| X causes Y backwards | ✅ 時制＋非エルミート |
+| category error       | ✅ 不可能       |
+| paradox              | ✅ 不可能       |
+| overdetermination    | ✅ 強度＋干渉     |
+| preemption           | ✅ 時制＋置換     |
+
 
 #### Future Work
 1. 介入ノードの自動探索（Active Causal Learning） 
